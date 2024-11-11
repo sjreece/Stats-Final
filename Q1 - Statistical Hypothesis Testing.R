@@ -13,8 +13,8 @@ library(tidyr)
 library(readxl)
 
 # Read in convariates and biomarkers data
-covariates_data <- as.data.table(read_excel("C:/Users/sjrfb/OneDrive - University of Edinburgh/Stats Code/Assignment/covariates.xlsx"))
-biomarkers_data <- as.data.table(read_excel("C:/Users/sjrfb/OneDrive - University of Edinburgh/Stats Code/Assignment/biomarkers.xlsx"))
+covariates_data <- as.data.table(read_excel("covariates.xlsx"))
+biomarkers_data <- as.data.table(read_excel("biomarkers.xlsx"))
 
 # Check column names
 colnames(covariates_data)
