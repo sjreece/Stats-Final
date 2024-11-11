@@ -12,8 +12,8 @@ library(gt)
 
 
 # Read in convariates and biomarkers data
-covariates_data <- as.data.table(read_excel("C:/Users/sjrfb/OneDrive - University of Edinburgh/Stats Code/Assignment/covariates.xlsx"))
-biomarkers_data <- as.data.table(read_excel("C:/Users/sjrfb/OneDrive - University of Edinburgh/Stats Code/Assignment/biomarkers.xlsx"))
+covariates_data <- as.data.table(read_excel("covariates.xlsx"))
+biomarkers_data <- as.data.table(read_excel("biomarkers.xlsx"))
 
 # Split 'PatientID' in 'biomarkers_data' into separate columns, i.e. seperate patient ID and timepoint
 biomarkers_data[,c("Biomarker","timepoint") := tstrsplit(Biomarker, "-", fixed = TRUE)]
